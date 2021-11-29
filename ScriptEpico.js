@@ -24,6 +24,19 @@ function registarConta(){
 
         window.alert("Conta registada com sucesso☺");
     }
+    window.location.reload(); 
+}
 
-    
+function loginConta(){
+    console.log("ola");
+
+    var inputMailLogin = document.getElementById("mail").value;
+    var inputPassLogin = document.getElementById("pass").value;
+
+    if(localStorage.getItem("mail") == inputMailLogin && localStorage.getItem("pass") == inputPassLogin){
+        window.alert("Conta registada com sucesso☺");
+    }else{
+        window.alert("Conta");
+    }
+    window.location.reload(); 
 }
